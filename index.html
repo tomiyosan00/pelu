@@ -3,96 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peluquería </title>
+  <title>Peluquería Glamour</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="script.js"></script>
-  <link rel="css" href="estilo.css">
-
+  <script src="js/app.js"></script>
+  <script src="css/estilo.css"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 font-sans">
 
-  <!-- Navbar -->
-  <header class="bg-green-500 text-white shadow-lg">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold">💇‍♀️ Peluqueria</h1>
-      <ul class="hidden md:flex space-x-6 text-lg">
-        <li><a href="#inicio" class="hover:text-gray-200">Inicio</a></li>
-        <li><a href="#servicios" class="hover:text-gray-200">Servicios</a></li>
-        <li><a href="#nosotros" class="hover:text-gray-200">Nosotros</a></li>
-        <li><a href="#contacto" class="hover:text-gray-200">Contacto</a></li>
-      </ul>
-      <button id="menu-btn" class="md:hidden text-white text-2xl">☰</button>
-    </nav>
+  <!-- Encabezado -->
+  <header class="bg-blue-600 text-white py-6 shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <img src="img/perfil.jpg" alt="" class="h-28 w-auto mr-3 rounded-md">
+      <nav class="space-x-4">
+        <a href="#inicio" class="hover:underline">Inicio</a>
+        <a href="#servicios" class="hover:underline">Servicios</a>
+        <a href="#turno" class="hover:underline">Pedir Turno</a>
+        <a href="#contacto" class="hover:underline">Contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Menú móvil -->
-  <div id="menu" class="hidden bg-green-400 text-white md:hidden">
-    <ul class="flex flex-col items-center p-4 space-y-4">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </div>
-
-  <!-- Sección Inicio -->
-  <section id="inicio" class="bg-cover bg-center h-[80vh]" style="background-image: url();">
-    <div class="h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-6">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Tu Estilo, Nuestra Pasión</h2>
-      <p class="text-lg mb-6">Transformamos tu look con el toque profesional que merecés.</p>
-      <a href="#contacto" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg shadow-md">Reservar Turno</a>
-    </div>
+<main>
+  <!-- Sección principal -->
+  <section id="inicio" class="text-center py-16 bg-gradient-to-b from-blue-100 to-white">
+    <h2 class="text-3xl font-semibold mb-4">Tu estilo, nuestra pasión </h2>
+    <p class="text-gray-600 mb-8">Cortes, color y cuidado personalizado. ¡Te esperamos!</p>
   </section>
 
-  <!-- Sección Servicios -->
-  <section id="servicios" class="py-16 bg-white">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-8 text-green-600">Nuestros Servicios</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 border rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <img src="" class="w-full h-48 object-cover rounded-xl mb-4" alt="Corte de cabello">
-          <h4 class="text-xl font-semibold mb-2">Corte & Peinado</h4>
-          <p>Estilos modernos, clásicos o personalizados según tu rostro y tipo de cabello.</p>
-        </div>
-        <div class="p-6 border rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <img src="" class="w-full h-48 object-cover rounded-xl mb-4" alt="Coloración">
-          <h4 class="text-xl font-semibold mb-2">Coloración & Mechas</h4>
-          <p>Usamos productos de calidad para mantener tu cabello sano y brillante.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Nosotros -->
-  <section id="nosotros" class="py-16 bg-gray-50">
-    <div class="container mx-auto text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-      <img src="" class="w-full md:w-1/2 rounded-2xl shadow-lg" alt="Equipo de peluquería">
-      <div>
-        <h3 class="text-3xl font-bold mb-4 text-green-600">Sobre Nosotros</h3>
-        <p class="text-lg mb-4">En <strong>Glam Style</strong> combinamos pasión, técnica y creatividad para ofrecerte la mejor experiencia en belleza y cuidado capilar.</p>
-        <p class="text-lg">Nuestro equipo está en constante formación para brindarte resultados de excelencia.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Contacto -->
-  <section id="contacto" class="py-16 bg-green-100">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-6 text-green-700">Contacto</h3>
-      <p class="mb-4 text-lg">📍 Ubicacion| 📞 <a href="tel:+5492923538525" class="text-green-700 font-semibold hover:underline">+54 9 11 2233 4455</a></p>
-      <a href="https://wa.me/5492923538525" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg shadow-md">💬 WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
-    <p>&copy; 2025 Peluqueria - Todos los derechos reservados</p>
-    <div class="flex justify-center space-x-4 mt-4">
-      <a href="#" class="hover:text-pink-400">Instagram</a>
+  <!-- Pedir turno -->
+  <section id="turno" class="py-16 bg-blue-50">
+    <div class="max-w-lg mx-auto bg-white shadow-lg rounded-2xl p-8">
+      <h2 class="text-2xl font-bold text-center mb-6">📅 Pedí tu turno</h2>
       
+
+      <form id="turnoForm" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Nombre</label>
+          <input id="nombre" type="text" required class="mt-1 w-full p-2 border rounded-lg" placeholder="Tu nombre" />
+        </div>
+
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium">Fecha</label>
+            <input id="fecha" type="date" required class="mt-1 w-full p-2 border rounded-lg" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Hora</label>
+            <input id="hora" type="time" required class="mt-1 w-full p-2 border rounded-lg" />
+          </div>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700">
+          Enviar
+        </button>
+      </form>
+
+      <p id="feedback" class="text-sm text-gray-600 mt-2 text-center"></p>
+      <!-- Agrega tu número de WhatsApp aquí (ejemplo Argentina: 5493512345678) -->
+      <input type="hidden" id="whatsappNumber" value="5492923538525" />
+    </div>
+  </section>
+</main> 
+
+  <!-- Contacto -->
+  <footer id="contacto" class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>📞 Tel: 2923538525</p>
+      <div class="flex justify-center gap-6 mt-4">
+        <a href="https://wa.me/5492923538525" target="_blank" class="hover:text-green-400">WhatsApp</a>
+        <a href="#" class="hover:text-pink-400">Instagram</a>
+      </div>
+      <p class="mt-6 text-xs">© 2025 BARBERSHOP - Todos los derechos reservados.</p>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
